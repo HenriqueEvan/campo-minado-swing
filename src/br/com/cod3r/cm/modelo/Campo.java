@@ -59,7 +59,7 @@ public class Campo {
 	boolean abrir() {
 		if (!aberto && !marcado) {
 			if(minado) {
-				notificarObservadores(CampoEvento.EXPLOSAO);
+				notificarObservadores(CampoEvento.EXPLODIR);
 				return true;
 			}
 			setAberto(true);
